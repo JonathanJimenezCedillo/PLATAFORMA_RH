@@ -58,10 +58,11 @@
                                     </td>
 
                                     <td>
-                                        <button id='eliminar' class='btnEliminar'>
-                                            <img src='../img/logos/borrar.png'></button>
+                                        <button class=' fas fa-trash-alt btn btn-danger' data-toggle='modal' data-target='#modalEliminar' id='eliminar'>
+                                            <img src='../img/logos/borrar.png' alt=''></button>
                                     </td>
                                 </tr>";
+                                 include("../Vista/php/modal_vista.php");
                             }
 
         $salida.=" </tbody>
@@ -112,17 +113,18 @@
                                     <td>". $fila['municipio']."</td>
                                     <td>". $fila['codigopostal']."</td>
                                     <td>". $fila['idcategoria']."</td>
-                                    <td>
+                                     <td>
                                         <button id='modificar' class='botonModificar'>
                                             <img src='../img/logos/actualizarInformacion.jpg'>
                                         </button>
                                     </td>
 
                                     <td>
-                                        <button id='eliminar' class='btnEliminar'>
-                                            <img src='../img/logos/borrar.png'></button>
+                                        <button class=' fas fa-trash-alt btn btn-danger' data-toggle='modal' data-target='#modalEliminar' id='eliminar'>
+                                            <img src='../img/logos/borrar.png' alt=''></button>
                                     </td>
                                 </tr>";
+                                include("../Vista/php/modal_vista.php");
                             }
 
         $salida.=" </tbody>
@@ -135,3 +137,4 @@
 
 
 ?>
+
