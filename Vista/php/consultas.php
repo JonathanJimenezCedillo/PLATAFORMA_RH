@@ -56,7 +56,7 @@
                                     foreach ($sql as $fila) {
 
                                  ?>
-                                <tr  class="tabla-cuerpo">
+                                <tr idElement="<?php echo $fila['idnumeroempleados']; ?>"   class="tabla-cuerpo">
                                     <td ><?php echo $fila['idnumeroempleados']; ?></td>
                                     <td><?php echo $fila['nombre']; ?></td>
                                     <td><?php echo $fila['apellidopaterno']; ?></td>
@@ -70,14 +70,14 @@
                                     <td><?php echo $fila['codigopostal']; ?></td>
                                     <td><?php echo $fila['idcategoria']; ?></td>
                                     <td>
-                                        <button id="modificar" class="botonModificar">
-                                            <img src="../img/logos/actualizarInformacion.jpg" alt="">
+                                        <button id='modificar' class='botonModificar'>
+                                            <img src='../img/logos/actualizarInformacion.jpg'>
                                         </button>
                                     </td>
 
                                     <td>
-                                        <button class=" fas fa-trash-alt btn btn-danger" data-toggle="modal" data-target="#modalEliminar" id="eliminar">
-                                            <img src="../img/logos/borrar.png" alt=""></button>
+                                        <button class=' fas fa-trash-alt btn btn-danger' data-toggle='modal' data-target='#modalEliminar' id='eliminar'>
+                                            <img src='../img/logos/borrar.png' alt=''></button>
                                     </td>
                                 </tr>
                                 <?php
@@ -98,3 +98,4 @@
 
 </body>
 </html>
+
